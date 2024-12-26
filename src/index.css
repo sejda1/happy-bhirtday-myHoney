@@ -1,0 +1,95 @@
+/* Genel stil */
+.bhirtday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f6f2;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.bhirtday img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bd-texts {
+  max-width: 600px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bd-texts:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bd-texts h1 {
+  font-size: 2rem;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.bd-texts p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.bd-texts h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Media Query: Mobil cihazlar için */
+@media (max-width: 768px) {
+  .bd-texts {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .bd-texts h1 {
+    font-size: 1.5rem;
+  }
+
+  .bd-texts h2 {
+    font-size: 1.4rem;
+  }
+
+  .bhirtday img {
+    width: 150px;
+  }
+}
+
+/* Media Query: Daha küçük cihazlar (telefonlar) */
+@media (max-width: 480px) {
+  .bd-texts {
+    padding: 10px;
+  }
+
+  .bd-texts h1 {
+    font-size: 1.2rem;
+  }
+
+  .bd-texts h2 {
+    font-size: 1.2rem;
+  }
+
+  .bhirtday img {
+    width: 120px;
+  }
+}
